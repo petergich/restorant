@@ -1,0 +1,54 @@
+.black-bg{
+background-color: #000000;
+}
+.logo{
+    max-height: 100px;
+    max-width: 100px;
+}
+.c-white{
+   color:white; 
+}
+.nav-text{
+        font-family: "Courier New", "Courier New", monospace;
+        color:white;
+}
+.c-orange{
+    color:#f5a004
+}
+.opaque-back{
+    background-color: rgba(10, 10, 11, 0.98);
+}
+.my-hero{
+    min-height: 100vh;
+}
+.black-red-bg{
+    background-color: #110000;
+    }
+.menu-div{
+    border: 1px solid #f5a004; 
+    border-radius: 5px;
+    display: inline-block;
+    margin:0;
+    position: relative;
+}
+.menu-div-title{
+    width:fit-content;
+    position: absolute; 
+    top: -10px; 
+    left: 10px; 
+    color:white;
+    background-color: #f5a004;
+    padding: 0 10px;
+}
+@media (min-width: 500px) {
+    .top-margin{
+        margin-top: 10vh;
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 500px) {
+    .top-margin{
+        margin-top: 5vh;
+    }
+}
