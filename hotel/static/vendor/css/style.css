@@ -27,18 +27,18 @@ background-color: #000000;
 .menu-div{
     border: 1px solid #f5a004; 
     border-radius: 5px;
+    max-width:max-content;
     display: inline-block;
     margin:0;
     position: relative;
 }
 .menu-div-title{
-    width:fit-content;
-    position: absolute; 
+    min-height: fit-content; 
     top: -10px; 
     left: 10px; 
     color:white;
     background-color: #f5a004;
-    padding: 0 10px;
+    padding:10px;
 }
 @media (min-width: 500px) {
     .top-margin{
