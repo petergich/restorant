@@ -226,7 +226,7 @@
         <!-- Layout container -->
 
         <div class="layout-page">
-                <section class="opaque-back my-hero p-4">
+                <section class=" my-hero bg-image" style="background-image: url('static/img/back.png');">
                     <div class="container black-red-bg">
                         <div
                           class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none justify-content-between flex-row"
@@ -240,17 +240,29 @@
                           </a>
                         </div>
                       </div>
-                    <div class="container top-margin">
-                        <div class="row ">
-                            <div class="menu-div p-2">
-                                <h3 class="menu-div-title">Food Category</h3>
+                    <div class="container top-margin" >
+                        <div class="row justify-content-between">
+                          {% if objects %}
+                          {% for obj in objects%}
+                            <div class="menu-div m-3 p-2 "  >
+                                <h3 class="menu-div-title">{{obj.category}}</h3>
                                 <ul>
-                                    <li>item 1</li>
-                                    <li>item 1</li>
-                                    <li>item 1</li>
-                                    <li>item 1</li>
+                                  {% for food in obj.foods%}
+                                    <li class="c-white">
+                                      <div class="justify-content-between" style="display:flex;">
+                                        <div>
+                                        <p class="menu-items p-2 m-2">{{food.name}}</p>
+                                        </div>
+                                        <div>
+                                        <p class="menu-items p-2 m-2">{{food.price}} <span>/=</span></p>
+                                        </div> 
+                                      </div>
+                                    </li>
+                                  {% endfor%}
                                 </ul>
                             </div>
+                            {% endfor %}
+                            {% endif%}
                         </div>
                         
                     </div>

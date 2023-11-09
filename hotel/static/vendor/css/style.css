@@ -25,20 +25,35 @@ background-color: #000000;
     background-color: #110000;
     }
 .menu-div{
+    background-color: rgba(10, 10, 11, 0.6);
+    flex: 1;
     border: 1px solid #f5a004; 
     border-radius: 5px;
+    max-width:80vh;
     display: inline-block;
     margin:0;
     position: relative;
 }
 .menu-div-title{
-    width:fit-content;
-    position: absolute; 
+    min-height: fit-content; 
     top: -10px; 
     left: 10px; 
     color:white;
     background-color: #f5a004;
-    padding: 0 10px;
+    padding:10px;
+    text-align: center;
+}
+.bg-image{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.menu-items{
+    color:white;
+    /*font-family: "Courier New", "Courier New", monospace;
+    background-color: rgba(255, 150, 4,0.7);*/
+    
+   
 }
 @media (min-width: 500px) {
     .top-margin{
