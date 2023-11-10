@@ -9,6 +9,6 @@ class food(models.Model):
     name=models.CharField(max_length=254)
     category=models.ForeignKey(food_category,on_delete=models.CASCADE)
     price=models.IntegerField()
-    def ___str__ (self):
+    def __str__ (self):
         return self.name
 # Create your models here.
