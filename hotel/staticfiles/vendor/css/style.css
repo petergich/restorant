@@ -1,0 +1,133 @@
+.black-bg{
+background-color: rgba(10, 10, 11, 0.98);
+}
+.logo{
+    max-height: 100px;
+    max-width: 100px;
+}
+.c-white{
+   color:white; 
+}
+.c-black{
+    color:rgb(0, 0, 0); 
+ }
+.nav-text{
+        font-family: "Courier New", "Courier New", monospace;
+        color:white;
+}
+.c-orange{
+    color:#f5a004
+}
+.opaque-back{
+    background-color: rgba(10, 10, 11, 0.98);
+}
+.my-hero{
+    min-height: 100vh;
+}
+.black-red-bg{
+    background-color: #110000;
+    }
+.menu-div{
+    background-color: rgba(10, 10, 11, 0.6);
+    flex: 1;
+    border: 1px solid #f5a004; 
+    border-radius: 5px;
+    max-width:max-content;
+    display: inline-block;
+    margin:0;
+    position: relative;
+}
+.food-div{
+    margin-top: 20vh;
+    background-color: rgba(10, 10, 11, 0.6);
+    flex: 1;
+    height:60vh;
+    width:60vw;
+    align-self: center;
+    border: 1px solid #f5a004;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.food-desc{
+   margin-left: 30%;
+   color :white;
+}
+.food-head{
+    background-color: #f5a004;
+    border-radius:5px;
+}
+.confirm-button{
+    margin-left: 30%;
+    margin-top: 30%;
+    width:max-content;
+    flex:1;
+    height: max-content;
+    color: #fff;
+    background-color:yellowgreen;
+    border-color: #93e200;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(116, 221, 55, 0.4);
+}
+.confirm-button:hover {
+    color: #fff;
+    background-color: #66c732;
+    border-color: #66c732;
+    transform: translateY(-1px);
+  }
+.menu-div-title{
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content; 
+    border-radius: 3px;
+    left: 10px; 
+    color:white;
+    background-color: #f5a004;
+    padding:10px;
+    text-align: center;
+}
+.bg-image{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.menu-items{
+    color:white;
+    max-width: 100px;
+    /*font-family: "Courier New", "Courier New", monospace;
+    background-color: rgba(255, 150, 4,0.7);*/
+    
+   
+}
+.menu-items:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color:rgba(255, 200, 00, 0.8) ;
+}
+.btn-order {
+    width:max-content;
+    flex:1;
+    height: max-content;
+    color: #fff;
+    background-color:yellowgreen;
+    border-color: #93e200;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(116, 221, 55, 0.4);
+  }
+  .btn-order:hover {
+    color: #fff;
+    background-color: #66c732;
+    border-color: #66c732;
+    transform: translateY(-1px);
+  }
+@media (min-width: 500px) {
+    .top-margin{
+        margin-top: 10vh;
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 500px) {
+    .top-margin{
+        margin-top: 5vh;
+    }
+}
